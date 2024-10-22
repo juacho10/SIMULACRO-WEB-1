@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reseña</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="reviewForm">
+            <div class="form-field">
+                <label for="username">Nombre de usuario</label>
+                <span class="error-message" id="username-error"></span> <!-- Mensaje de error arriba del input -->
+                <input type="text" id="username" name="username" maxlength="10" />
+            </div>
+
+            <div class="form-field">
+                <label for="movie">Nombre de la película</label>
+                <span class="error-message" id="movie-error"></span> <!-- Mensaje de error arriba del input -->
+                <input type="text" id="movie" name="movie" maxlength="200" />
+            </div>
+
+            <div class="form-field">
+                <label for="rating">Puntuación</label>
+                <span class="error-message" id="rating-error"></span> <!-- Mensaje de error arriba del input -->
+                <input type="number" id="rating" name="rating" min="1" max="10" />
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <span class="error-message" id="email-error"></span> <!-- Mensaje de error arriba del input -->
+                <input type="email" id="email" name="email" />
+            </div>
+
+            <button type="submit" id="submitBtn">Guardar reseña</button>
+        </form>
+
+        <div class="reviews">
+            <h2>Últimas reseñas</h2>
+            <ul id="reviewsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

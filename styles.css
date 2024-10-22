@@ -1,0 +1,67 @@
+/* Estilos para el contenedor del formulario */
+.form-container {
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #e30045;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #e30045;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-field {
+    margin-bottom: 20px; /* Espacio entre cada campo de formulario */
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre el input y el siguiente elemento */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    background-color: #e30045;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilo para el mensaje de error */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 8px; /* Añadir margen entre el mensaje de error y el input */
+    display: block; /* Aseguramos que el mensaje de error esté en su propia línea */
+}
+
+.error {
+    border-color: red; /* Borde rojo para campos con error */
+}
+
+/* Estilos para la lista de reseñas */
+.reviews {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #e30045;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#reviewsList {
+    list-style-type: none;
+    padding: 0;
+}
+
